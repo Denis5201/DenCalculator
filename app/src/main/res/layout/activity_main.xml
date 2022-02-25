@@ -9,8 +9,6 @@
     <ImageButton
         android:id="@+id/buttonAC"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -22,8 +20,6 @@
     <ImageButton
         android:id="@+id/multi"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -36,8 +32,6 @@
     <ImageButton
         android:id="@+id/button7"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -50,8 +44,6 @@
     <ImageButton
         android:id="@+id/equal"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="58dp"
         android:contentDescription="@null"
@@ -63,8 +55,6 @@
     <ImageButton
         android:id="@+id/button9"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -77,8 +67,6 @@
     <ImageButton
         android:id="@+id/division"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -91,8 +79,6 @@
     <ImageButton
         android:id="@+id/sub"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -105,8 +91,6 @@
     <ImageButton
         android:id="@+id/percent"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -118,8 +102,6 @@
     <ImageButton
         android:id="@+id/button6"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -144,8 +126,6 @@
     <ImageButton
         android:id="@+id/sum"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -158,8 +138,6 @@
     <ImageButton
         android:id="@+id/button5"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -184,8 +162,6 @@
     <ImageButton
         android:id="@+id/button8"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -211,8 +187,6 @@
     <ImageButton
         android:id="@+id/button4"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -225,8 +199,6 @@
     <ImageButton
         android:id="@+id/buttonDot"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="58dp"
         android:contentDescription="@null"
@@ -251,8 +223,6 @@
     <ImageButton
         android:id="@+id/changeSign"
         style="@style/smallButtonStyle"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="@null"
@@ -521,11 +491,11 @@
         android:id="@+id/imagePanel"
         android:layout_width="366dp"
         android:layout_height="100dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="30dp"
         android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/changeSign"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/panel" />
 
     <TextView
@@ -561,13 +531,13 @@
         android:id="@+id/textCalc"
         android:layout_width="145dp"
         android:layout_height="34dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif"
         android:text="@string/calculator"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/imagePanel"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
