@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onNumberClick(view: View) {
-        var ID = view.id
+        val ID = view.id
         when (ID) {
             binding.button0.id -> binding.textdisplay.append("0")
             binding.button1.id -> binding.textdisplay.append("1")
