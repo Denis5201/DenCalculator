@@ -2,6 +2,7 @@ package com.example.dencalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.dencalculator.databinding.ActivityMainBinding
 
@@ -17,26 +18,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button0.setOnClickListener { binding.textdisplay.append("0") }
-        binding.button1.setOnClickListener { binding.textdisplay.append("1") }
-        binding.button2.setOnClickListener { binding.textdisplay.append("2") }
-        binding.button3.setOnClickListener { binding.textdisplay.append("3") }
-        binding.button4.setOnClickListener { binding.textdisplay.append("4") }
-        binding.button5.setOnClickListener { binding.textdisplay.append("5") }
-        binding.button6.setOnClickListener { binding.textdisplay.append("6") }
-        binding.button7.setOnClickListener { binding.textdisplay.append("7") }
-        binding.button8.setOnClickListener { binding.textdisplay.append("8") }
-        binding.button9.setOnClickListener { binding.textdisplay.append("9") }
-        binding.buttonDot.setOnClickListener { binding.textdisplay.append(".") }
-
         binding.buttonAC.setOnClickListener {
             binding.textdisplay.setText("")
             number1 = ""
             number2 = ""
             sign = 'n'
         }
+
         binding.changeSign.setOnClickListener {
-            var temp = binding.textdisplay.text.toString()
+            val temp = binding.textdisplay.text.toString()
             if (temp != "" && temp != "0")
             if (temp.toDouble()>0)
                 binding.textdisplay.setText("-$temp")
@@ -60,26 +50,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        binding.sum.setOnClickListener {
-            number1 = binding.textdisplay.text.toString()
-            sign = '+'
-            binding.textdisplay.setText("")
-        }
-        binding.sub.setOnClickListener {
-            number1 = binding.textdisplay.text.toString()
-            sign = '-'
-            binding.textdisplay.setText("")
-        }
-        binding.multi.setOnClickListener {
-            number1 = binding.textdisplay.text.toString()
-            sign = '*'
-            binding.textdisplay.setText("")
-        }
-        binding.division.setOnClickListener {
-            number1 = binding.textdisplay.text.toString()
-            sign = '/'
-            binding.textdisplay.setText("")
-        }
 
         binding.equal.setOnClickListener {
             number2 = binding.textdisplay.text.toString()
@@ -100,4 +70,36 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    fun onNumberClick(view: View) {
+        var ID = view.id
+        when (ID) {
+            binding.button0.id -> binding.textdisplay.append("0")
+            binding.button1.id -> binding.textdisplay.append("1")
+            binding.button2.id -> binding.textdisplay.append("2")
+            binding.button3.id -> binding.textdisplay.append("3")
+            binding.button4.id -> binding.textdisplay.append("4")
+            binding.button5.id -> binding.textdisplay.append("5")
+            binding.button6.id -> binding.textdisplay.append("6")
+            binding.button7.id -> binding.textdisplay.append("7")
+            binding.button8.id -> binding.textdisplay.append("8")
+            binding.button9.id -> binding.textdisplay.append("9")
+            binding.buttonDot.id -> binding.textdisplay.append(".")
+        }
+    }
+
+    fun onSignClick(view: View) {
+        number1 = binding.textdisplay.text.toString()
+        binding.textdisplay.setText("")
+
+        var ID = view.id
+        when (ID) {
+            binding.sum.id -> sign = '+'
+            binding.sub.id -> sign = '-'
+            binding.multi.id -> sign = '*'
+            binding.division.id -> sign = '/'
+        }
+    }
+
+
 }

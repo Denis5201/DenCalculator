@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DenCalculator</string>
+    <string name="calculator">Calculator</string>
+    <string name="backText">8888888888</string>
 </resources>

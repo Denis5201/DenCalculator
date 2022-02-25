@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/DenCalculator/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/DenCalculator/app/src/main/res/drawable/button.xml" value="0.16" />
+        <entry key="..\:/Android/DenCalculator/app/src/main/res/drawable/buttonblue.xml" value="0.161" />
+        <entry key="..\:/Android/DenCalculator/app/src/main/res/drawable/buttonfor0.xml" value="0.161" />
+        <entry key="..\:/Android/DenCalculator/app/src/main/res/font/museomoderno_thin.xml" value="0.28072916666666664" />
+        <entry key="..\:/Android/DenCalculator/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
