@@ -6,486 +6,272 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonAC"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="AC"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button7"
-        app:layout_constraintEnd_toStartOf="@+id/changeSign"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/changeSign" />
 
-    <ImageButton
+    <Button
         android:id="@+id/multi"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonblue"
         android:contentDescription="@null"
-        android:onClick="onSignClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="x"
+        android:textColor="@color/white"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/sub"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buttonblue"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button7"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="7"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button8" />
 
-    <ImageButton
+    <Button
         android:id="@+id/equal"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="58dp"
+        android:background="@drawable/buttonblue"
         android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="29sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buttonblue"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button9"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="9"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toStartOf="@+id/multi"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/multi" />
 
-    <ImageButton
+    <Button
         android:id="@+id/division"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonblue"
         android:contentDescription="@null"
-        android:onClick="onSignClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="÷"
+        android:textColor="@color/white"
+        android:textSize="43sp"
         app:layout_constraintBottom_toTopOf="@+id/multi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buttonblue"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/sub"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonblue"
         android:contentDescription="@null"
-        android:onClick="onSignClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/sum"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buttonblue"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/percent"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="%"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toStartOf="@+id/division"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/division" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button6"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="6"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/sub"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/sub" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button1"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button0"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button2" />
 
-    <ImageButton
+    <Button
         android:id="@+id/sum"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonblue"
         android:contentDescription="@null"
-        android:onClick="onSignClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/equal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buttonblue"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button5"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="5"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button6" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button3"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="3"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonDot"
-        app:layout_constraintEnd_toStartOf="@+id/sum"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/sum" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button8"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="8"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button9" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button0"
         android:layout_width="175dp"
         android:layout_height="80dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="58dp"
+        android:background="@drawable/buttonfor0"
         android:elevation="10dp"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="0"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonDot"
-        app:srcCompat="@drawable/buttonfor0"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonDot" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button4"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="4"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button1"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button5" />
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonDot"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="58dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text=","
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/equal"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/equal" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button2"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        android:onClick="onNumberClick"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="2"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
         app:layout_constraintBottom_toTopOf="@+id/button0"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button3" />
 
-    <ImageButton
+    <Button
         android:id="@+id/changeSign"
         style="@style/smallButtonStyle"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
         android:contentDescription="@null"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintEnd_toStartOf="@+id/percent"
-        app:srcCompat="@drawable/button"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="1"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button1"
-        app:layout_constraintEnd_toEndOf="@+id/button1"
-        app:layout_constraintStart_toStartOf="@+id/button1"
-        app:layout_constraintTop_toTopOf="@+id/button1" />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="2"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.509" />
-
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.509" />
-
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="4"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
-
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="5"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
-
-    <TextView
-        android:id="@+id/text6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="6"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="@+id/button6"
-        app:layout_constraintStart_toStartOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="@+id/button6" />
-
-    <TextView
-        android:id="@+id/text7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="7"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button7"
-        app:layout_constraintEnd_toEndOf="@+id/button7"
-        app:layout_constraintStart_toStartOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="@+id/button7" />
-
-    <TextView
-        android:id="@+id/text8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="8"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button8"
-        app:layout_constraintEnd_toEndOf="@+id/button8"
-        app:layout_constraintStart_toStartOf="@+id/button8"
-        app:layout_constraintTop_toTopOf="@+id/button8" />
-
-    <TextView
-        android:id="@+id/text9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="9"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button9"
-        app:layout_constraintEnd_toEndOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="@+id/button9"
-        app:layout_constraintTop_toTopOf="@+id/button9" />
-
-    <TextView
-        android:id="@+id/textAC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="AC"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonAC"
-        app:layout_constraintEnd_toEndOf="@+id/buttonAC"
-        app:layout_constraintStart_toStartOf="@+id/buttonAC"
-        app:layout_constraintTop_toTopOf="@+id/buttonAC" />
-
-    <TextView
-        android:id="@+id/textSign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_bold"
         android:text="+/-"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/changeSign"
-        app:layout_constraintEnd_toEndOf="@+id/changeSign"
-        app:layout_constraintStart_toStartOf="@+id/changeSign"
-        app:layout_constraintTop_toTopOf="@+id/changeSign" />
-
-    <TextView
-        android:id="@+id/textPersent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="%"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/percent"
-        app:layout_constraintEnd_toEndOf="@+id/percent"
-        app:layout_constraintStart_toStartOf="@+id/percent"
-        app:layout_constraintTop_toTopOf="@+id/percent" />
-
-    <TextView
-        android:id="@+id/textDivision"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="÷"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/division"
-        app:layout_constraintEnd_toEndOf="@+id/division"
-        app:layout_constraintStart_toStartOf="@+id/division"
-        app:layout_constraintTop_toTopOf="@+id/division" />
-
-    <TextView
-        android:id="@+id/textMulti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="X"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/multi"
-        app:layout_constraintEnd_toEndOf="@+id/multi"
-        app:layout_constraintStart_toStartOf="@+id/multi"
-        app:layout_constraintTop_toTopOf="@+id/multi" />
-
-    <TextView
-        android:id="@+id/textSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="-"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sub"
-        app:layout_constraintEnd_toEndOf="@+id/sub"
-        app:layout_constraintStart_toStartOf="@+id/sub"
-        app:layout_constraintTop_toTopOf="@+id/sub" />
-
-    <TextView
-        android:id="@+id/textSum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="+"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sum"
-        app:layout_constraintEnd_toEndOf="@+id/sum"
-        app:layout_constraintStart_toStartOf="@+id/sum"
-        app:layout_constraintTop_toTopOf="@+id/sum" />
-
-    <TextView
-        android:id="@+id/textEqual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="="
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/equal"
-        app:layout_constraintEnd_toEndOf="@+id/equal"
-        app:layout_constraintStart_toStartOf="@+id/equal"
-        app:layout_constraintTop_toTopOf="@+id/equal" />
-
-    <TextView
-        android:id="@+id/text0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button0"
-        app:layout_constraintEnd_toEndOf="@+id/button0"
-        app:layout_constraintStart_toStartOf="@+id/button0"
-        app:layout_constraintTop_toTopOf="@+id/button0" />
-
-    <TextView
-        android:id="@+id/textDot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:elevation="10dp"
-        android:text=","
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonDot"
-        app:layout_constraintEnd_toEndOf="@+id/buttonDot"
-        app:layout_constraintStart_toStartOf="@+id/buttonDot"
-        app:layout_constraintTop_toTopOf="@+id/buttonDot" />
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toStartOf="@+id/percent" />
 
     <ImageView
         android:id="@+id/imagePanel"
@@ -539,5 +325,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imagePanel"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button0,button1,button2,button3,button4,button5,button6,button7,button8,button9" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="sum,sub,multi,division" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
