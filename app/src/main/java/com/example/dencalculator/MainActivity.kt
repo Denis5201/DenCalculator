@@ -9,14 +9,12 @@ import com.example.dencalculator.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
 
-    var number1 = ""
-    var number2 = ""
-    var sign = 'n'
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val work = Logic()
 
         for (num in binding.groupNumber.referencedIds) {
             val but = findViewById<Button>(num)
@@ -26,10 +24,8 @@ class MainActivity : AppCompatActivity() {
         for (s in binding.groupSign.referencedIds) {
             val but = findViewById<Button>(s)
             but.setOnClickListener {
-                number1 = binding.textdisplay.text.toString()
+                work.setNumAndSign(binding.textdisplay.text.toString(), but.text[0])
                 binding.textdisplay.setText("")
-
-                sign = but.text[0]
             }
         }
 
@@ -39,53 +35,30 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonAC.setOnClickListener {
             binding.textdisplay.setText("")
-            number1 = ""
-            number2 = ""
-            sign = 'n'
+            work.clean()
         }
 
         binding.changeSign.setOnClickListener {
-            val temp = binding.textdisplay.text.toString()
-            if (temp != "" && temp != "0")
-                if (temp.toDouble() > 0)
-                    binding.textdisplay.setText("-$temp")
-                else
-                    binding.textdisplay.setText(temp.drop(1))
+            val result = work.change(binding.textdisplay.text.toString())
+            binding.textdisplay.setText(result)
         }
 
         binding.percent.setOnClickListener {
-            number2 = binding.textdisplay.text.toString()
-
-            if (number1 != "" && number2 != "") {
-                val result = when (sign) {
-                    '+' -> (number1.toDouble() + number2.toDouble() * number1.toDouble() / 100).toString()
-                    '-' -> (number1.toDouble() - number2.toDouble() * number1.toDouble() / 100).toString()
-                    '*' -> (number1.toDouble() * number2.toDouble() / 100).toString()
-                    '/' -> (number1.toDouble() / (number2.toDouble() / 100)).toString()
-                    else -> ""
-                }
-                binding.textdisplay.setText(result)
-            }
-
+            val result = work.percentRes(binding.textdisplay.text.toString())
+            binding.textdisplay.setText(result)
         }
 
         binding.equal.setOnClickListener {
-            number2 = binding.textdisplay.text.toString()
+            val result = work.usualRes(binding.textdisplay.text.toString())
 
-            if (number2 == "0" && sign == '/') {
+            if (result == "/0") {
                 Toast.makeText(this, "Деление на 0", Toast.LENGTH_SHORT).show()
                 binding.textdisplay.setText("")
-            } else if (number1 != "" && number2 != "") {
-                val result = when (sign) {
-                    '+' -> (number1.toDouble() + number2.toDouble()).toString()
-                    '-' -> (number1.toDouble() - number2.toDouble()).toString()
-                    'x' -> (number1.toDouble() * number2.toDouble()).toString()
-                    '÷' -> (number1.toDouble() / number2.toDouble()).toString()
-                    else -> ""
-                }
+            }
+            else {
                 binding.textdisplay.setText(result)
             }
         }
     }
-    
+
 }

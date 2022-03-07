@@ -4,284 +4,352 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/buttonAC"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="AC"
         android:textColor="@color/blue"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
-        app:layout_constraintEnd_toStartOf="@+id/changeSign" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH2"
+        app:layout_constraintEnd_toStartOf="@+id/lineV1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineH1" />
 
     <Button
         android:id="@+id/multi"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/buttonblue"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="x"
         android:textColor="@color/white"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/sub"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button7"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="7"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button8" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH3"
+        app:layout_constraintEnd_toStartOf="@+id/lineV4"
+        app:layout_constraintStart_toStartOf="@+id/lineV3"
+        app:layout_constraintTop_toTopOf="@+id/lineH2" />
 
     <Button
         android:id="@+id/equal"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/buttonblue"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="="
         android:textColor="@color/white"
         android:textSize="29sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH6"
+        app:layout_constraintEnd_toStartOf="@+id/lineV4"
+        app:layout_constraintStart_toStartOf="@+id/lineV3"
+        app:layout_constraintTop_toTopOf="@+id/lineH5" />
 
     <Button
         android:id="@+id/button9"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="9"
         android:textColor="@color/blue"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toStartOf="@+id/multi" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH3"
+        app:layout_constraintEnd_toStartOf="@+id/lineV3"
+        app:layout_constraintStart_toStartOf="@+id/lineV2"
+        app:layout_constraintTop_toTopOf="@+id/lineH2" />
 
     <Button
         android:id="@+id/division"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/buttonblue"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="÷"
         android:textColor="@color/white"
         android:textSize="43sp"
-        app:layout_constraintBottom_toTopOf="@+id/multi"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH2"
+        app:layout_constraintEnd_toStartOf="@+id/lineV4"
+        app:layout_constraintStart_toStartOf="@+id/lineV3"
+        app:layout_constraintTop_toTopOf="@+id/lineH1" />
 
     <Button
         android:id="@+id/sub"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/buttonblue"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="-"
         android:textColor="@color/white"
         android:textSize="45sp"
-        app:layout_constraintBottom_toTopOf="@+id/sum"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/percent"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="%"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toStartOf="@+id/division" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH4"
+        app:layout_constraintEnd_toStartOf="@+id/lineV4"
+        app:layout_constraintStart_toStartOf="@+id/lineV3"
+        app:layout_constraintTop_toTopOf="@+id/lineH3" />
 
     <Button
         android:id="@+id/button6"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="6"
         android:textColor="@color/blue"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/sub" />
-
-    <Button
-        android:id="@+id/button1"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="1"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button0"
-        app:layout_constraintEnd_toStartOf="@+id/button2" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH4"
+        app:layout_constraintEnd_toStartOf="@+id/lineV3"
+        app:layout_constraintStart_toStartOf="@+id/lineV2"
+        app:layout_constraintTop_toTopOf="@+id/lineH3" />
 
     <Button
         android:id="@+id/sum"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/buttonblue"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="+"
         android:textColor="@color/white"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/equal"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH5"
+        app:layout_constraintEnd_toStartOf="@+id/lineV4"
+        app:layout_constraintStart_toStartOf="@+id/lineV3"
+        app:layout_constraintTop_toTopOf="@+id/lineH4" />
 
-    <Button
-        android:id="@+id/button5"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="5"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toStartOf="@+id/button6" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67168266" />
 
     <Button
         android:id="@+id/button3"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="3"
         android:textColor="@color/blue"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonDot"
-        app:layout_constraintEnd_toStartOf="@+id/sum" />
-
-    <Button
-        android:id="@+id/button8"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="8"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button9" />
-
-    <Button
-        android:id="@+id/button0"
-        android:layout_width="175dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="58dp"
-        android:background="@drawable/buttonfor0"
-        android:elevation="10dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="0"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonDot" />
-
-    <Button
-        android:id="@+id/button4"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="4"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
-        app:layout_constraintEnd_toStartOf="@+id/button5" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH5"
+        app:layout_constraintEnd_toStartOf="@+id/lineV3"
+        app:layout_constraintStart_toStartOf="@+id/lineV2"
+        app:layout_constraintTop_toTopOf="@+id/lineH4" />
 
     <Button
         android:id="@+id/buttonDot"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text=","
         android:textColor="@color/blue"
         android:textSize="29sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/equal" />
-
-    <Button
-        android:id="@+id/button2"
-        style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button"
-        android:contentDescription="@null"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="2"
-        android:textColor="@color/blue"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button0"
-        app:layout_constraintEnd_toStartOf="@+id/button3" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH6"
+        app:layout_constraintEnd_toStartOf="@+id/lineV3"
+        app:layout_constraintStart_toStartOf="@+id/lineV2"
+        app:layout_constraintTop_toTopOf="@+id/lineH5" />
 
     <Button
         android:id="@+id/changeSign"
         style="@style/smallButtonStyle"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
         android:fontFamily="@font/montserrat_bold"
         android:text="+/-"
         android:textColor="@color/blue"
         android:textSize="29sp"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintEnd_toStartOf="@+id/percent" />
+        app:layout_constraintBottom_toTopOf="@+id/lineH2"
+        app:layout_constraintEnd_toStartOf="@+id/lineV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lineV1"
+        app:layout_constraintTop_toTopOf="@+id/lineH1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonfor0"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="0"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH6"
+        app:layout_constraintEnd_toStartOf="@+id/lineV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineH5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH5"
+        app:layout_constraintEnd_toStartOf="@+id/lineV1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineH4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="4"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH4"
+        app:layout_constraintEnd_toStartOf="@+id/lineV1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineH3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="7"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH3"
+        app:layout_constraintEnd_toStartOf="@+id/lineV1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineH2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="8"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH3"
+        app:layout_constraintEnd_toStartOf="@+id/lineV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lineV1"
+        app:layout_constraintTop_toTopOf="@+id/lineH2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="5"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH4"
+        app:layout_constraintEnd_toStartOf="@+id/lineV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lineV1"
+        app:layout_constraintTop_toTopOf="@+id/lineH3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="2"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH5"
+        app:layout_constraintEnd_toStartOf="@+id/lineV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lineV1"
+        app:layout_constraintTop_toTopOf="@+id/lineH4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/percent"
+        style="@style/smallButtonStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/button"
+        android:contentDescription="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="%"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineH2"
+        app:layout_constraintEnd_toStartOf="@+id/lineV3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lineV2"
+        app:layout_constraintTop_toTopOf="@+id/lineH1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imagePanel"
-        android:layout_width="366dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"
         android:clickable="false"
-        app:layout_constraintBottom_toTopOf="@+id/changeSign"
+        app:layout_constraintBottom_toTopOf="@+id/lineH1"
+        app:layout_constraintEnd_toStartOf="@+id/lineV4"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineH0"
         app:srcCompat="@drawable/panel" />
 
     <TextView
@@ -317,13 +385,13 @@
         android:id="@+id/textCalc"
         android:layout_width="145dp"
         android:layout_height="34dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif"
         android:text="@string/calculator"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imagePanel"
+        app:layout_constraintBottom_toTopOf="@+id/lineH0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Group
@@ -337,5 +405,75 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="sum,sub,multi,division" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineV1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
