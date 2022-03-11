@@ -2,4 +2,5 @@
     <string name="app_name">DenCalculator</string>
     <string name="calculator">Calculator</string>
     <string name="backText">8888888888</string>
+    <string name="error0">"Деление на 0"</string>
 </resources>

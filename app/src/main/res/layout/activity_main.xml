@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="10dp"
     tools:context=".MainActivity">
 
     <Button
@@ -12,7 +11,7 @@
         style="@style/smallButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="11dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
@@ -198,7 +197,7 @@
         android:id="@+id/button0"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/buttonfor0"
         android:elevation="10dp"
@@ -216,7 +215,7 @@
     <Button
         android:id="@+id/button1"
         style="@style/smallButtonStyle"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
@@ -234,7 +233,7 @@
     <Button
         android:id="@+id/button4"
         style="@style/smallButtonStyle"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
@@ -252,7 +251,7 @@
     <Button
         android:id="@+id/button7"
         style="@style/smallButtonStyle"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button"
         android:contentDescription="@null"
@@ -374,7 +373,7 @@
         android:layout_width="324dp"
         android:layout_height="52dp"
         android:fontFamily="@font/numbertext"
-        android:gravity="right|center_vertical"
+        android:gravity="center_vertical|end"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@+id/imagePanel"
         app:layout_constraintEnd_toEndOf="@+id/imagePanel"

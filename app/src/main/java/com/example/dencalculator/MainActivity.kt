@@ -7,7 +7,7 @@ import android.widget.Toast
 import com.example.dencalculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding : ActivityMainBinding
+    private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             val but = findViewById<Button>(s)
             but.setOnClickListener {
                 work.setNumAndSign(binding.textdisplay.text.toString(), but.text[0])
-                binding.textdisplay.setText("")
+                binding.textdisplay.text = ""
             }
         }
 
@@ -34,29 +34,29 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonAC.setOnClickListener {
-            binding.textdisplay.setText("")
+            binding.textdisplay.text = ""
             work.clean()
         }
 
         binding.changeSign.setOnClickListener {
             val result = work.change(binding.textdisplay.text.toString())
-            binding.textdisplay.setText(result)
+            binding.textdisplay.text = result
         }
 
         binding.percent.setOnClickListener {
             val result = work.percentRes(binding.textdisplay.text.toString())
-            binding.textdisplay.setText(result)
+            binding.textdisplay.text = result
         }
 
         binding.equal.setOnClickListener {
             val result = work.usualRes(binding.textdisplay.text.toString())
 
             if (result == "/0") {
-                Toast.makeText(this, "Деление на 0", Toast.LENGTH_SHORT).show()
-                binding.textdisplay.setText("")
+                Toast.makeText(this, R.string.error0, Toast.LENGTH_SHORT).show()
+                binding.textdisplay.text = ""
             }
             else {
-                binding.textdisplay.setText(result)
+                binding.textdisplay.text = result
             }
         }
     }
